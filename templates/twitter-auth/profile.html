@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+<h1>You are logged in!!</h1>
+<img src="{{ current_user.profile_image_url }}" />
+<p>{{ current_user.name }}</p>
+<a href="{% url 'logout' %}">Log Out</a>
+</body>
+</html>
